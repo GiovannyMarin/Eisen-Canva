@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Eisen Canva - Assinatura de E-mail</title>
+  </head>
+  <body>
+    <header class="header"> <!--header-->
+      <img src="./images/logo_canva.png" class="src">
+      <div class="menu">
+        <a class="menu_itens" href="#" class="assinatura">Assinatura de E-mail</a>
+        <a class="menu_itens" href="#" class="assinatura">Design de Vaga - EM BREVE</a>
+      </div>
+    </header> <!--fecha header-->
+
+    <div class="wrapper"> <!--wrapper-->
+      <div class="content"> <!--content-->
+        <div class="divWrapper"> <!--divwrapper-->
+          <div class="image"> <!--image-->
+            <img id="imageField" alt="logo" class="imageField" />
+          </div> <!--fecha image-->
+        </div> <!--fecha divwrapper-->
+
+        <div class="divWrapper contactWrapper">
+          <div class="details">
+            <input
+              type="text"
+              id="nameInput"
+              class="nameInput inputElement"
+              placeholder="Nome"
+            />
+
+            <input
+              type="text"
+              id="roleInput"
+              class="roleInput inputElement"
+              placeholder="Cargo"
+            />
+          </div>
+
+          <div class="contactItems">
+            <div class="contactSide leftSide">
+              <div class="contactDetail">
+                <img src="./images/WhatsApp.png" alt="" />
+
+                <input
+                  type="text"
+                  id="telephoneInput"
+                  class="inputElement telephoneInput"
+                  placeholder="(00) 00000-0000"
+                />
+              </div>
+
+              <div class="contactDetail">
+                <img src="./images/Mail.png" alt="" />
+
+                <input
+                  type="text"
+                  id="mailInput"
+                  class="inputElement mailInput"
+                  placeholder="email@exemplo.com"
+                />
+              </div>
+            </div>
+
+            <div class="contactSide">
+              <div class="contactDetail">
+                <div class="contactImages">
+                  <img src="./images/Instagram.png" alt="" />
+                  <img src="./images/Facebook.png" alt="" />
+                </div>
+
+                <span>eisenmetalbr</span>
+              </div>
+
+              <div class="contactDetail">
+                <div class="contactImages">
+                  <img src="./images/Subtract.png" alt="" />
+                  <img src="./images/LinkedIn.png" alt="" />
+                </div>
+
+                <span>Eisen Metal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divWrapper imagesWrapper">
+          <img src="./images/logo.svg" alt="qr code" />
+
+          <img src="./images/qrcode.png" alt="qr code" />
+        </div>
+      </div>
+    </div> <!--fechar wrapper-->
+
+      <div class="buttonWrapper">
+        <div class="imageinputdiv" style="background-color: #254aad;">
+          <span style="color: #ffffff ">Selecione a sua foto de perfil:</span>
+          <input type="file" id="imageInput" accept="image/*" />
+        </div>
+        <button id="dw_bt" class="button">Baixe sua assinatura de e-mail!</button>
+      </div>
+        
+      <script src="./script.js"></script>
+      <script src="./dom-to-image.js"></script>
+
+      <script>
+        var ticket = document.getElementsByClassName("wrapper")[0];
+        var download_button = document.getElementById("dw_bt");
+
+        download_button.addEventListener("click", ()=>{
+            domtoimage.toJpeg(ticket).then((data)=>{
+                var link = document.createElement("a");
+                link.download = "assinatura_de_email.jpeg";
+                link.href = data;
+                link.click();
+            })
+        })
+      </script>
+    
+  </body>
+</html>

@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+  background-color: #ffffff;
+  overflow-x: hidden;
+
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+.menu_itens{
+  text-decoration: none;
+  color: white;
+  padding: 5px 15px 5px 15px;
+  margin: 10px;
+  background-color: #496ccc;
+}
+
+.header{
+  background-color: #254aad;
+  padding: 15px;
+  width: auto;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.explicacoes{
+  margin: 15px;
+  color:#254aad
+}
+
+.wrapper {
+  background-image: url("./images/background.png");
+  width: 2200px !important;
+  height: 400px !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.imagesWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 40px;
+}
+
+.content {
+  padding: 0 51px;
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.divWrapper {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.imageField {
+  position: relative;
+  min-width: 330px;
+  min-height: 330px;
+
+  max-width: 330px;
+  max-height: 330px;
+
+  border-radius: 50%;
+  background: #d3dbdc;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.imageField img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; /* Se você quiser que a imagem também seja arredondada */
+}
+
+.contactWrapper {
+  display: flex;
+  flex: 25 !important;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  font-size: 38px;
+  width: 100%;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 57px;
+}
+
+.contactItems {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contactSide {
+  display: flex;
+  gap: 25px;
+}
+
+.leftSide {
+  width: 100%;
+  padding-right: 10px;
+}
+
+.contactImages {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.contactDetail {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 38px;
+  font-weight: 200;
+  width: 100%;
+}
+
+.contactSide {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.inputElement {
+  border: 0px solid;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: white;
+  padding: 0px;
+  width: 100% !important;
+  min-width: 100% !important;
+  font-size: 38px;
+}
+
+.nameInput {
+  font-weight: 600;
+  font-size: 57px;
+}
+
+.roleInput {
+  font-weight: 200;
+  font-size: 38px;
+  font-style: italic;
+}
+
+.telephoneInput {
+  font-weight: 200;
+  font-size: 38px;
+}
+
+.mailInput {
+  font-weight: 200 !important;
+  font-size: 38px;
+}
+
+input {
+  font-weight: 200 !important;
+}
+
+*:focus {
+  outline: none;
+  border-bottom: 1px solid white;
+}
+
+.buttonWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 15px;
+  margin: 15px;
+
+  cursor: pointer;
+}
+
+.imageinputdiv{
+  background-color: #254aad;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#imageInput{
+  background-color: #496ccc;
+  padding: 10px;
+}
+
+.button {
+  background-color: #383D4C;
+  color: white;
+  border: none;
+  padding: 20px 80px;
+  font-size: 20px;
+  cursor: pointer;
+}
